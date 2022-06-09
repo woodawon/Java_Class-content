@@ -1,0 +1,12 @@
+public class MyClass {
+    public static void main(String args[]) {
+        String gender ="남성";
+        int height = 184;
+        String s = "이 사람 맞음";
+        
+        if(gender == "남성" && height == 180) {
+            s = s;
+        } 
+        System.out.print(s);
+    }
+}
