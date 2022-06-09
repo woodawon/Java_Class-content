@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class exam03 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String n = scanner.nextLine();
+		int a = scanner.nextInt();
+		System.out.println(answer(n,a));
+	}
+	
+	static String answer(String name, int age) {
+		return "내 이름은 "+name+" 이고, 나이는 "+age+"세 이다.";
+	}
+
+}
