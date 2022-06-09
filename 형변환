@@ -1,0 +1,13 @@
+public class MyClass {
+    public static void main(String args[]) {
+        int smallNum = 5;
+        double bigNum = 18.99;
+        System.out.println("smallNum : " + smallNum);
+        System.out.println("bigNum : " + bigNum);
+        
+        smallNum = (int)bigNum;
+        bigNum = smallNum;
+        System.out.println("smallNum : " + smallNum);
+        System.out.println("bigNum : " + bigNum);
+    }
+}
