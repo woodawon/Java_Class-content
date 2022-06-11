@@ -1,0 +1,25 @@
+public class exam02 {
+	public static void main(String[] args) {
+		exam03 ex1 = new exam03();
+		ex1.speedUp("위화살표");
+		System.out.println(ex1.speed);
+		ex1.speedUp("위화살표","컨트롤");
+		System.out.println(ex1.speed);
+	}
+}
+
+public class exam03 {
+    int speed = 0;
+
+    void speedUp(String key) {
+        if (key == "위화살표") {
+            speed = speed + 1;
+        }
+    }
+
+    void speedUp(String key, String key2) {
+        if (key == "위화살표" && key2 == "컨트롤") {
+            speed = speed + 100;
+        }
+    }
+}
