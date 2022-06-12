@@ -1,0 +1,28 @@
+public class exam02 {
+	public static void main(String[] args) {
+		exam03 hHu = new exam03();
+		hHu.firstName = "Woo";
+		hHu.secondName = "Dawon";
+		hHu.height = 161;
+		hHu.weight = 50;
+		System.out.print(hHu.firstName 
+				+ hHu.secondName + " " 
+				+ hHu.height + " " 
+				+ hHu.weight + " ");
+	}
+}
+
+public class exam03 {
+	String firstName;
+	String secondName;
+	double height;
+	double weight;
+	
+	
+	void Human(String first, String second, double Hheight, double Wweight) {
+		firstName = first;
+		secondName = second;
+		height = Hheight;
+		weight = Wweight;
+	}
+}
