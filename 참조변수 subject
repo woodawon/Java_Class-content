@@ -1,0 +1,31 @@
+public class Subject {
+	  	String[] subjectName = new String[5];
+	    double[] subjectScore = new double[5];
+
+
+	    public Subject(String name1, String name2, String name3, String name4, String name5){
+	        subjectName[0] = name1;
+	        subjectName[1] = name2;
+	        subjectName[2] = name3;
+	        subjectName[3] = name4;
+	        subjectName[4] = name5;
+	    }
+
+	    void subjectSet(double score1, double score2, double score3, double score4, double score5) {
+	        subjectScore[0] = score1;
+	        subjectScore[1] = score2;
+	        subjectScore[2] = score3;
+	        subjectScore[3] = score4;
+	        subjectScore[4] = score5;
+	    }
+}
+
+public class exam02 {
+	public static void main(String[] args) {
+		  Subject subject = new Subject("국", "영", "수", "사", "과");
+	        subject.subjectSet(10, 20, 30, 40, 50);
+	        for (int i = 0; i < 5; i++) {
+	            System.out.println(subject.subjectName[i] + " " + subject.subjectScore[i]);
+	        }
+	}
+}
