@@ -1,0 +1,29 @@
+public class Frame {
+	int a;
+	int b;
+	String result;
+	
+	public Frame() {
+		MouseEvent event = new MouseEvent(this);
+	}
+}
+
+public class MouseEvent {
+	Frame frame;
+	public MouseEvent(Frame frame) {
+		this.frame = frame;
+		println();
+	}
+	public void println() {
+		frame.a = 10;
+		frame.b = 20;
+		frame.result = frame.a + frame.b + "";
+	}
+}
+
+public class exam02 {
+	public static void main(String[] args) {
+		Frame frame = new Frame();
+		System.out.println("더한 값은 : " + frame.result);
+	}
+}
