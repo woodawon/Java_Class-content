@@ -1,0 +1,17 @@
+public class ThisStudent {
+	int money;
+	String name;
+	boolean boardingCheck = false;
+	
+	public ThisStudent(String name, int money) {
+		this.name = name;
+		this.money = money;
+	}
+}
+
+public class exam02 {
+	public static void main(String[] args) {
+		ThisStudent thisStudent = new ThisStudent("다원", 1000);
+		System.out.println(thisStudent.name + " " +  thisStudent.money);
+	}
+}
